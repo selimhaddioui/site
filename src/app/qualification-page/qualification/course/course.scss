@@ -1,0 +1,10 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}

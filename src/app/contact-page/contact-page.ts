@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-contact-page',
-  imports: [],
+  selector: 'sh-contact-page',
   templateUrl: './contact-page.html',
   styleUrl: './contact-page.scss'
 })
-export class ContactPage {
+export class ContactPageComponent {
 }

@@ -1,0 +1,20 @@
+<article class="course">
+  <p>Enseignement: {{ course().label }}</p>
+  <p>Descriptif: {{ course().description }}</p>
+
+  @if (skills() && skills().length > 0) {
+    <ul class="skills">
+      @for (skill of skills(); track $index) {
+        <sh-skill [skill]="skill"/>
+      }
+    </ul>
+  }
+
+  @if (projects() && projects().length > 0) {
+    <section class="projects">
+      @for (project of projects(); track project) {
+        <sh-project-summary [project]="project"/>
+      }
+    </section>
+  }
+</article>

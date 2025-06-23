@@ -1,30 +1,30 @@
 import {Routes} from '@angular/router';
-import {HomePage} from './home-page/home-page';
-import {ProjectPage} from './project-page/project-page';
-import {ContractPage} from './contract-page/contract-page';
-import {ContactPage} from './contact-page/contact-page';
-import {QualificationPage} from './qualification-page/qualification-page';
+import {HomePageComponent} from './home-page/home-page';
+import {ProjectPageComponent} from './project-page/project-page';
+import {ContractPageComponent} from './contract-page/contract-page';
+import {ContactPageComponent} from './contact-page/contact-page';
+import {QualificationPageComponent} from './qualification-page/qualification-page';
 
 
 export const routes: Routes = [
   {
     path: '',
-    component: HomePage,
+    component: HomePageComponent,
   },
   {
     path: 'projects',
-    component: ProjectPage,
+    component: ProjectPageComponent,
   },
   {
     path: 'contracts',
-    component: ContractPage,
+    component: ContractPageComponent,
   },
   {
     path: 'contact',
-    component: ContactPage,
+    component: ContactPageComponent,
   },
   {
     path: 'qualifications',
-    component: QualificationPage,
+    component: QualificationPageComponent,
   }
 ];

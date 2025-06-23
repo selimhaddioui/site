@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-contract-page',
-  imports: [],
+  selector: 'sh-contract-page',
   templateUrl: './contract-page.html',
   styleUrl: './contract-page.scss'
 })
-export class ContractPage {
+export class ContractPageComponent {
 }

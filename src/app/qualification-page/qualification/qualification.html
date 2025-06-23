@@ -1,0 +1,22 @@
+<article class="qualification">
+  <h1>{{ qualification().label }}</h1>
+  <p>Établissement: {{ qualification().university }}</p>
+  <p>Lieu: {{ qualification().location }}</p>
+  <p><a [href]="qualification().link">Lien</a></p>
+  <p>Description: {{ qualification().description }}</p>
+  @if (skills() && skills().length > 0) {
+    <ul class="skills">
+      @for (skill of skills(); track $index) {
+        <sh-skill [skill]="skill"/>
+      }
+    </ul>
+  }
+
+  @if (courses() && courses().length > 0) {
+    <section class="courses">
+      @for (course of courses(); track $index) {
+        <sh-course [course]="course"/>
+      }
+    </section>
+  }
+</article>

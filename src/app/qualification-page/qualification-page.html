@@ -1,3 +1,7 @@
-<div>
-  <h2>A qualification component</h2>
-</div>
+<section class="qualifications">
+
+  @for (qualification of qualifications; track $index) {
+    <sh-qualification [qualification]="qualification"/>
+  }
+
+</section>

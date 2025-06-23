@@ -1,0 +1,14 @@
+<article class="project-summary">
+  <h2>Project : {{ project().label }}</h2>
+  <p>Description: {{ project().functionalDescription }}</p>
+
+  @if (skills() && skills().length > 0) {
+    <ul class="skills">
+      @for (skill of skills(); track $index) {
+        <sh-skill [skill]="skill"/>
+      }
+    </ul>
+  }
+
+  <a routerLink="/project/{{ project().label }}">View Project Details</a>
+</article>
