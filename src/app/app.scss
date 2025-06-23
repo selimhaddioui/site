@@ -1,0 +1,32 @@
+.active {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav, footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+footer.footer {
+  text-align: center;
+
+  .footer__links {
+    display: flex;
+    gap: 1rem;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
